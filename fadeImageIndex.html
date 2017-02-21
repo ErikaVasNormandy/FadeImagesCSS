@@ -5,93 +5,19 @@
     Fade Images
   </title>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
-  <style>
-  #cf4a {
-    position:relative;
-    height:281px;
-    width:450px;
-    margin:0 auto;
-  }
+     <script src="index.js"></script>
+     <link href="styles.css" rel="stylesheet" type="text/css">
 
-  #cf4a img {
-    position:absolute;
-    left:0;
-
-    transition: opacity 1s ease-in-out;
-  }
-
-  @keyframes cf3FadeInOut {
-  0% {
-  opacity:1;
-}
-45% {
-opacity:1;
-}
-55% {
-opacity:0;
-}
-100% {
-opacity:0;
-}
-}
-
-#cf4a img {
-animation-name: cf4FadeInOut;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 10s;
-animation-direction: alternate;
-}
-
-@keyframes cf4FadeInOut {
-  0% {
-    opacity:1;
-  }
-  17% {
-    opacity:1;
-  }
-  25% {
-    opacity:0;
-  }
-  92% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-#cf4a img:nth-of-type(1) {
-  animation-delay: 12s;
-}
-#cf4a img:nth-of-type(2) {
-  animation-delay: 8s;
-}
-#cf4a img:nth-of-type(3) {
-  animation-delay: 6s;
-}
-#cf4a img:nth-of-type(4) {
-  animation-delay: 0;
-}
-
-  </style>
-  <script>
-    var appName=angular.module("AppForHTML", []);
-    appName.controller("ctrl1", function($scope, $timeout) {
-      $scope.message="Hello!"
-    });
-  </script>
 
 </head>
-<body ng-controller="ctrl1">
-<p>{{message}}</p>
+<body ng-controller="ctrl1" >
 
-
-<div id="cf4a">
-  <img  src="https://images7.alphacoders.com/644/thumb-1920-644071.png"/>
-  <img  src="https://i.imgur.com/IElwzES.png"/>
+<div id="cf4a" ng-style="AngularCSS">
+  <p>{{message}}</p>
+  <img src="https://images7.alphacoders.com/644/thumb-1920-644071.png"/>
+  <img src="https://i.imgur.com/IElwzES.png"/>
   <img src="http://images6.fanpop.com/image/photos/39500000/OTGW-over-the-garden-wall-39594421-1920-1080.jpg"/>
-  <img  src="https://aeb85937.files.wordpress.com/2015/03/song-of-the-sea-14.jpg"/>
+  <img src="https://aeb85937.files.wordpress.com/2015/03/song-of-the-sea-14.jpg"/>
 </div>
 
 
