@@ -1,14 +1,31 @@
 
 
-#cf4a {
+body {
    position:relative;
-   height:281px;
-   width:450px;
+
    margin:0 auto;
+
  }
+ *{
+   box-sizing: border-box;
+ }
+html{
+  margin:0;
+  background-blend-mode: darken;
+  background-size: cover;
+  background: url("http://images6.fanpop.com/image/photos/39500000/OTGW-over-the-garden-wall-39594421-1920-1080.jpg");
+
+  transition: 3s;
+}
+
+div#texttop{
+  width: 30%
+}
 
 
 
+
+/*
 #cf4a img {
   position:absolute;
   left:0;
@@ -47,4 +64,4 @@ animation-direction: alternate;
 }
 #cf4a img:nth-of-type(4) {
   animation-delay: 0;
-}
+}*/
